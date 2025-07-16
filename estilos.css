@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffccdd;
+  margin-bottom: 10px;
+}
+
+.instrucciones {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.grid-malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.semestre {
+  border: 2px solid #ffccdd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #222;
+}
+
+.semestre h2 {
+  font-size: 1.1em;
+  margin-top: 0;
+  color: #ffccdd;
+}
+
+.ramo {
+  margin: 8px 0;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  font-size: 14px;
+}
+
+.ramo:hover {
+  background-color: #f0f0f0;
+}
+
+.ramo.aprobado {
+  background-color: #ffc0cb;
+  color: #333;
+  text-decoration: line-through;
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.3) 75%);
+  background-size: 10px 10px;
+}
+
+.ramo.bloqueado {
+  background-color: #888;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.ramo.bloqueado:hover {
+  background-color: #888;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffccdd;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffb3c7;
+}
